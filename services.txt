@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | ClearView Window Cleaning</title>
+  <meta name="description" content="Explore our full range of window cleaning services: exterior, interior, track cleaning, and screen cleaning.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            water: {
+              50: '#eef7ff', 100: '#d9edff', 200: '#bce0ff', 300: '#8eccff',
+              400: '#59b0ff', 500: '#338dff', 600: '#1a6ef5', 700: '#1358e1',
+              800: '#1647b6', 900: '#183f8f',
+            },
+            clean: { 50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0' }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient { background: linear-gradient(135deg, #1a6ef5 0%, #338dff 50%, #59b0ff 100%); }
+    .glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(26,110,245,0.12); }
+  </style>
+</head>
+<body class="bg-clean-50 text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-clean-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-water-600 flex items-center justify-center">
+            <i data-lucide="droplets" class="w-5 h-5 text-white"></i>
+          </div>
+          <span class="text-lg font-bold text-gray-900 tracking-tight">ClearView</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-water-600 transition-colors">Home</a>
+          <a href="services.html" class="text-sm font-medium text-water-600">Services</a>
+          <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-water-600 transition-colors">About</a>
+          <a href="booking.html" class="text-sm font-semibold bg-water-600 text-white px-5 py-2 rounded-full hover:bg-water-700 transition-colors">Get a Quote</a>
+        </div>
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-clean-100 transition-colors" aria-label="Toggle menu">
+          <i data-lucide="menu" class="w-5 h-5 text-gray-700"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-clean-200 bg-white">
+      <div class="px-4 py-4 space-y-2">
+        <a href="index.html" class="block px-4 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-clean-100 transition-colors">Home</a>
+        <a href="services.html" class="block px-4 py-2.5 rounded-lg text-sm font-medium text-water-600 bg-water-50">Services</a>
+        <a href="about.html" class="block px-4 py-2.5 rounded-lg text-sm font-medium text-gray-600 hover:bg-clean-100 transition-colors">About</a>
+        <a href="booking.html" class="block px-4 py-2.5 rounded-lg text-sm font-semibold text-white bg-water-600 text-center hover:bg-water-700 transition-colors">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero-gradient pt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">Our Services</h1>
+      <p class="mt-4 text-water-100 text-lg max-w-lg">Everything your windows need to look their absolute best — inside and out.</p>
+    </div>
+    <div class="relative -mb-1">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+        <path d="M0 30C360 60 720 0 1080 30C1260 45 1380 37 1440 30V60H0V30Z" fill="#f8fafc"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
+
+      <!-- Exterior Window Cleaning -->
+      <div class="card-hover bg-white rounded-2xl border border-clean-200 overflow-hidden">
+        <div class="grid md:grid-cols-5">
+          <div class="md:col-span-2 bg-gradient-to-br from-water-500 to-water-700 p-10 flex flex-col justify-center items-center text-center">
+            <div class="w-20 h-20 rounded-2xl bg-white/15 flex items-center justify-center mb-4">
+              <i data-lucide="sun" class="w-10 h-10 text-white"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Exterior Window Cleaning</h2>
+          </div>
+          <div class="md:col-span-3 p-8 sm:p-10">
+            <p class="text-gray-600 leading-relaxed">Our exterior window cleaning service removes dirt, grime, water spots, and environmental buildup from the outside of your windows. Using professional-grade squeegees and eco-friendly cleaning solutions, we deliver a streak-free shine that lets maximum light into your home.</p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Streak-free results using professional squeegee technique
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Safe removal of hard water stains and mineral deposits
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                All windows accessible up to 3 stories
+              </li>
+            </ul>
+            <a href="booking.html" class="mt-8 inline-flex items-center gap-2 bg-water-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-water-700 transition-colors text-sm">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              Book This Service
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interior Window Cleaning -->
+      <div class="card-hover bg-white rounded-2xl border border-clean-200 overflow-hidden">
+        <div class="grid md:grid-cols-5">
+          <div class="md:col-span-2 bg-gradient-to-br from-water-400 to-water-600 p-10 flex flex-col justify-center items-center text-center">
+            <div class="w-20 h-20 rounded-2xl bg-white/15 flex items-center justify-center mb-4">
+              <i data-lucide="home" class="w-10 h-10 text-white"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Interior Window Cleaning</h2>
+          </div>
+          <div class="md:col-span-3 p-8 sm:p-10">
+            <p class="text-gray-600 leading-relaxed">We carefully clean the interior side of all your windows, removing fingerprints, dust, cooking residue, and pet nose prints. We take care to protect your furnishings, floors, and windowsills during the entire process.</p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Protective floor coverings placed before we start
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Non-toxic, low-odor cleaning products safe for indoor use
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Sills wiped down and dried after cleaning
+              </li>
+            </ul>
+            <a href="booking.html" class="mt-8 inline-flex items-center gap-2 bg-water-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-water-700 transition-colors text-sm">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              Book This Service
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Track Cleaning -->
+      <div class="card-hover bg-white rounded-2xl border border-clean-200 overflow-hidden">
+        <div class="grid md:grid-cols-5">
+          <div class="md:col-span-2 bg-gradient-to-br from-water-500 to-water-700 p-10 flex flex-col justify-center items-center text-center">
+            <div class="w-20 h-20 rounded-2xl bg-white/15 flex items-center justify-center mb-4">
+              <i data-lucide="rail-symbol" class="w-10 h-10 text-white"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Track Cleaning</h2>
+          </div>
+          <div class="md:col-span-3 p-8 sm:p-10">
+            <p class="text-gray-600 leading-relaxed">Window tracks collect dirt, dead insects, and moisture over time, which can affect how your windows open and close. Our track cleaning service restores them to like-new condition, improving both appearance and functionality.</p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Deep cleaning of all window tracks and channels
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Removal of built-up debris and mildew
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Smoother window operation after cleaning
+              </li>
+            </ul>
+            <a href="booking.html" class="mt-8 inline-flex items-center gap-2 bg-water-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-water-700 transition-colors text-sm">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              Book This Service
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen Cleaning -->
+      <div class="card-hover bg-white rounded-2xl border border-clean-200 overflow-hidden">
+        <div class="grid md:grid-cols-5">
+          <div class="md:col-span-2 bg-gradient-to-br from-water-400 to-water-600 p-10 flex flex-col justify-center items-center text-center">
+            <div class="w-20 h-20 rounded-2xl bg-white/15 flex items-center justify-center mb-4">
+              <i data-lucide="grid-2x2" class="w-10 h-10 text-white"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-white">Screen Cleaning</h2>
+          </div>
+          <div class="md:col-span-3 p-8 sm:p-10">
+            <p class="text-gray-600 leading-relaxed">Dirty screens block airflow and make even clean windows look grimy. We carefully remove, wash, and reinstall each screen — leaving them dust-free and looking brand new.</p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Careful removal and reinstallation of each screen
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Gentle hand-washing to prevent damage
+              </li>
+              <li class="flex items-start gap-3 text-sm text-gray-600">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-water-500 flex-shrink-0 mt-0.5"></i>
+                Improves airflow and natural light
+              </li>
+            </ul>
+            <a href="booking.html" class="mt-8 inline-flex items-center gap-2 bg-water-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-water-700 transition-colors text-sm">
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+              Book This Service
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 sm:py-28 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="hero-gradient rounded-3xl p-10 sm:p-16 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative">
+          <h2 class="text-3xl sm:text-4xl font-bold text-white">Not Sure What You Need?</h2>
+          <p class="mt-4 text-water-100 text-lg max-w-md mx-auto">No worries — tell us about your home and we'll recommend the perfect service package for you.</p>
+          <a href="booking.html" class="mt-8 inline-flex items-center gap-2 bg-white text-water-700 font-semibold px-8 py-4 rounded-full hover:bg-clean-50 transition-colors shadow-lg">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            Get a Custom Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-8 h-8 rounded-lg bg-water-600 flex items-center justify-center">
+              <i data-lucide="droplets" class="w-4 h-4 text-white"></i>
+            </div>
+            <span class="text-base font-bold text-white">ClearView</span>
+          </div>
+          <p class="text-sm leading-relaxed">Professional window cleaning for homes in the greater metro area. Locally owned, fully insured.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Quick Links</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="text-sm hover:text-white transition-colors">Home</a></li>
+            <li><a href="services.html" class="text-sm hover:text-white transition-colors">Services</a></li>
+            <li><a href="about.html" class="text-sm hover:text-white transition-colors">About Us</a></li>
+            <li><a href="booking.html" class="text-sm hover:text-white transition-colors">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Contact</h4>
+          <ul class="space-y-2.5">
+            <li class="flex items-center gap-2 text-sm"><i data-lucide="phone" class="w-4 h-4 text-water-400"></i>(555) 123-4567</li>
+            <li class="flex items-center gap-2 text-sm"><i data-lucide="mail" class="w-4 h-4 text-water-400"></i>hello@clearview.com</li>
+            <li class="flex items-center gap-2 text-sm"><i data-lucide="map-pin" class="w-4 h-4 text-water-400"></i>Your City, State</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold text-sm mb-4">Hours</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>Mon – Fri: 8am – 6pm</li>
+            <li>Saturday: 9am – 4pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-sm">&copy; 2026 ClearView Window Cleaning. All rights reserved.</p>
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors">
+          <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>Back to Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
